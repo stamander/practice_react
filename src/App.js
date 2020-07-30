@@ -5,8 +5,10 @@ class App extends React.Component {
     const text = "Hello World";
     return (
       <div>
-        {text}
-        <img src = 'https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/react/ninjawanko.png'/>
+        <h1>こんにちは{text}さん</h1>
+        <button>にんじゃわんこ</button>
+        <button>ひつじ仙人</button>
+
 
       </div>
     );
