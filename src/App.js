@@ -1,4 +1,5 @@
 import React from 'react';
+import Language from './Language';
 
 class App extends React.Component {
 
@@ -25,6 +26,24 @@ class App extends React.Component {
   render() {
     const text = "Hello World";
     console.log(this.state);
+    const Languagelist = [
+      {
+        name : " HTML & css ", 
+        image :"https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/react/html.svg"
+      },
+
+      {
+        name : "Javascript",
+        image : "https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/react/es6.svg"
+      },
+
+      {
+        name : "React",
+        image : "https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/react/react.svg"
+
+      }
+
+    ]
     return (
       <div>
         <h1 className = "title">{text}</h1>
@@ -38,6 +57,25 @@ class App extends React.Component {
         <button onClick = {() => {this.handleClick()}}>+</button>
         
         <button onClick = {() => {this.mainasClick()}}>-</button>
+
+        <div className = "language">
+
+
+          {Languagelist.map((LanguageItem)=>{
+            
+            return(
+              <Language
+
+              name = {LanguageItem.name}
+              image = {LanguageItem.image}
+              
+              
+              />
+
+            );
+          })}
+          
+        </div>
 
 
       </div>
