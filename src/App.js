@@ -27,8 +27,8 @@ class App extends React.Component {
     console.log(this.state);
     return (
       <div>
-        <h1>{text}</h1>
-        <h1>こんにちは{this.state.name}さん</h1>
+        <h1 className = "title">{text}</h1>
+        <h1 >こんにちは{this.state.name}さん</h1>
         <button onClick = {()=> {this.hundleClick("にんじゃわんこ")}}>
           にんじゃわんこ
           </button>

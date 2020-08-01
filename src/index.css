@@ -50,3 +50,11 @@ button:active {
   left: 4px;
   box-shadow: none;
 }
+
+
+.title{
+  color: red;
+  background-color: orange;
+}
+
+
