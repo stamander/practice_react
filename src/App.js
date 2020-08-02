@@ -27,6 +27,7 @@ class App extends React.Component {
   render() {
     const text = "Hello World";
     console.log(this.state);
+    
     const Languagelist = [
       {
         name : " HTML & css ", 
@@ -46,12 +47,19 @@ class App extends React.Component {
 
       
     ]
-        const lessonItem = [
-          {
-            name = "HTML&CSS",
-            image = "https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/react/html.svg"
-          }
-        ]
+
+
+
+
+    const lessonItem = [
+      {
+        name : "HTML&CSS",
+        image : "https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/react/html.svg"
+      }
+    ]
+
+
+
     return (
       <div>
         <h1 className = "title">{text}</h1>
@@ -65,6 +73,11 @@ class App extends React.Component {
         <button onClick = {() => {this.handleClick()}}>+</button>
         
         <button onClick = {() => {this.mainasClick()}}>-</button>
+
+        <Lesson
+              name = {lessonItem.name}
+              img = {lessonItem.image}
+              />
 
         <div className = "language">
 
@@ -84,16 +97,9 @@ class App extends React.Component {
               );
             })}
             
-            return(
-              <Lesson
-                name = {lessonItem.name}
-                img = {lessonItem.image}
-              />
 
-            );
+
         </div>
-
-
       </div>
     );
   }
