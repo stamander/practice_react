@@ -31,17 +31,20 @@ class App extends React.Component {
     const Languagelist = [
       {
         name : " HTML & css ", 
-        image :"https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/react/html.svg"
+        image :"https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/react/html.svg",
+        introduction : "webページを構成する要素"
       },
 
       {
         name : "Javascript",
-        image : "https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/react/es6.svg"
+        image : "https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/react/es6.svg",
+        introduction : "webページを構成する要素"
       },
 
       {
         name : "React",
-        image : "https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/react/react.svg"
+        image : "https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/react/react.svg",
+        introduction : "webページを構成する要素"
 
       }
 
@@ -90,7 +93,7 @@ class App extends React.Component {
 
               name = {LanguageItem.name}
               image = {LanguageItem.image}
-              
+              introduction ={LanguageItem.introduction}
               
               />
 
