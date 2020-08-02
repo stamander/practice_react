@@ -57,7 +57,8 @@ class App extends React.Component {
     const lessonItem = [
       {
         name : "HTML&CSS",
-        image : "https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/react/html.svg"
+        image : "https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/react/html.svg",
+        introduction : "webページを構成する要素"
       }
     ]
 
