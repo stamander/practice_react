@@ -40,7 +40,9 @@ class Main extends React.Component {
                 <Lesson
                   name={lessonItem.name}
                   image={lessonItem.image}
-                  introduction={lessonItem.introduction}
+                  // introductionをpropsで渡してください
+                  introduction ={lessonItem.introduction}
+                  
                 />
               );
             })}

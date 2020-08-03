@@ -1,54 +1,42 @@
-import React from 'react';
+import  React from 'react';
 
-class Lesson extends React.Component {
-  constructor(props) {
+class Lesson extends React.Component{
+
+  constructor(props){
     super(props);
-    this.state = {isModalOpen: false};
+    this.state
   }
 
-  handleClickLesson() {
-    this.setState({isModalOpen: true});
-  }
-
-  handleClickClose() {
-    this.setState({isModalOpen: false});
-  }
-
-  render() {
-    let modal;
-    if (this.state.isModalOpen) {
-      modal = (
+  render(){
+    return(
+      <div className='lesson-card'>
+        <div className='lesson-item'>
+          <p>{this.props.name}</p>
+          <img src= {this.props.image}/>
+        </div>
         <div className='modal'>
           <div className='modal-inner'>
             <div className='modal-header'></div>
             <div className='modal-introduction'>
+              {/* レッスンの名前を表示してください */}
               <h2>{this.props.name}</h2>
+              
+              {/* レッスンの紹介文を表示してください */}
               <p>{this.props.introduction}</p>
+              
             </div>
-            <button
-              className='modal-close-btn'
-              onClick={() => this.handleClickClose()}
-            >
+            <button className='modal-close-btn'>
               とじる
             </button>
           </div>
         </div>
-      );
-    }
-
-    return (
-      <div className='lesson-card'>
-        <div
-          className='lesson-item'
-          onClick={() => {this.handleClickLesson()}}
-        >
-          <p>{this.props.name}</p>
-          <img src={this.props.image} />
-        </div>
-        {modal}
       </div>
+
+
     );
   }
+
 }
 
-export default Lesson;
+
+export default Lesson; 
