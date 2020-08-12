@@ -3,7 +3,11 @@ import React from 'react';
 class App extends React.Component {
   render() {
     return (
-      <h1>Hello React</h1>
+      <div>
+        <h1>Hello React</h1>
+        <img src ='https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/react/ninjawanko.png'/>
+
+      </div>
     );
   }
 }
